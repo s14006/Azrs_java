@@ -33,10 +33,6 @@ public class Main {
                     comm.send(name + "が退出しました");
                     comm.finish();
                     break;
-                } else if (smsg.equals("change")) {
-                    Scanner change = new Scanner(System.in);
-                    comm.send(name + "が" + change + "になりました");
-                    name = change.next();
                 } else {
                     comm.send(name + ":" + smsg);
                 }
